@@ -51,7 +51,7 @@ export default[
       "name": "Courage",
       "image": imageFive,
       "phone": "0420719904",
-      "email": "marasinipradeep@gmail.com",
+      "email": "Courage@gmail.com",
       "DOB": "15/07/1969"
     },
     {
@@ -109,6 +109,103 @@ export default[
       "phone": "0420719911",
       "email": "ckis@gmail.com",
       "DOB": "03/09/1980"
+    },
+    {
+      "id": 13,
+      "name": "Ponge",
+      "image": imageOne,
+      "phone": "0520719900",
+      "email": "ponge@gmail.com",
+      "DOB": "14/07/1979"
+    },
+    {
+      "id": 14,
+      "name": "Mr. Drabs",
+      "image": imageTwo,
+      "phone": "0520719901",
+      "email": "Drabs@gmail.com",
+      "DOB": "10/08/1959"
+    },
+    {
+      "id": 15,
+      "name": "Quidward",
+      "image": imageThree,
+      "phone": "0520719902",
+      "email": "Quidward@gmail.com",
+      "DOB": "1/05/1949"
+    },
+    {
+      "id": 16,
+      "name": "Dexter",
+      "image": imageFour,
+      "phone": "0520719903",
+      "email": "Dexter@gmail.com",
+      "DOB": "19/04/1959"
+    },
+    {
+      "id": 17,
+      "name": "Courage",
+      "image": imageFive,
+      "phone": "0520719904",
+      "email": "Courage@gmail.com",
+      "DOB": "15/07/1969"
+    },
+    {
+      "id": 18,
+      "name": "Funnie",
+      "image": imageSix,
+      "phone": "0520719905",
+      "email": "Funnie@gmail.com",
+      "DOB": "29/08/1979"
+    },
+    {
+      "id": 19,
+      "name": "Bunny",
+      "image": imageSeven,
+      "phone": "0520719906",
+      "email": "Bunny@gmail.com",
+      "DOB": "12/01/1989"
+    },
+    {
+      "id": 20,
+      "name": "Bravo",
+      "image": imageEight,
+      "phone": "0520719907",
+      "email": "Bravo@gmail.com",
+      "DOB": "13/07/199"
+    },
+    {
+      "id": 21,
+      "name": "Pickles",
+      "image": imageNine,
+      "phone": "0520719908",
+      "email": "Pickles@gmail.com",
+      "DOB": "19/10/2001"
+    },
+    {
+      "id": 22,
+      "name": "Ocko",
+      "image": imageTen,
+      "phone": "0520719909",
+      "email": "Ocko@gmail.com",
+      "DOB": "25/02/1995"
+    },
+    {
+      "id": 23,
+      "name": "Lanet",
+      "image": imageEleven,
+      "phone": "0520719910",
+      "email": "lanet@gmail.com",
+      "DOB": "14/07/1960"
+    },
+    {
+      "id": 24,
+      "name": "Kis",
+      "image": imageTweleve,
+      "phone": "0520719911",
+      "email": "kis@gmail.com",
+      "DOB": "03/09/1980"
     }
+
   ]
   
