@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import Heading from "../Heading/Heading"
 import SearchBar from "../SearchBar/SearchBar"
-import EmployeeTitles from "../EmployeeTitles/EmployeeTitles"
+import EmployeeData from "../EmployeeData/EmployeeData"
 
 export default class Home extends Component {
     render() {
@@ -10,7 +10,7 @@ export default class Home extends Component {
             <div>
               <Heading/>
               <SearchBar/>
-              <EmployeeTitles/>
+              <EmployeeData/>
             </div>
         )
     }
