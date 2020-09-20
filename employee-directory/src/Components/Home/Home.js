@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
 
 import Heading from "../Heading/Heading"
-import SearchBar from "../SearchBar/SearchBar"
-import EmployeeData from "../EmployeeData/EmployeeData"
+import EmployeeContainer from "../EmployeeContainer/EmployeeContainer"
 
 export default class Home extends Component {
     render() {
         return (
             <div>
               <Heading/>
-              <SearchBar/>
-              <EmployeeData/>
+              <EmployeeContainer/>
             </div>
         )
     }
