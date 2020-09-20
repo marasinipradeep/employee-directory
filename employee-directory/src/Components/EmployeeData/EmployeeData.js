@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import EmployeeTitles from "../EmployeeTitles/EmployeeTitles"
+import TableHeading from "../TableHeading/TableHeading"
 import data from "../../data"
 
 export default class EmployeeData extends Component {
@@ -14,6 +15,7 @@ export default class EmployeeData extends Component {
         console.log(this.state)
         return (
             <div>
+                <TableHeading/>
                 {this.state.data.map(data=>(
                     <EmployeeTitles
                     id={data.id}
@@ -23,10 +25,12 @@ export default class EmployeeData extends Component {
                     email={data.email}
                     birthday={data.DOB}
                     />
-
+                   
                     
 
-                ))}
+                )
+                
+                )}
                 
             </div>
         )
