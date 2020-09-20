@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import EmployeeTitles from "../EmployeeTitles/EmployeeTitles"
-import data from "../../data.json"
+import data from "../../data"
 
 export default class EmployeeData extends Component {
 
