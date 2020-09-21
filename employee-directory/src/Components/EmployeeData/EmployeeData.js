@@ -12,26 +12,30 @@ export default class EmployeeData extends Component {
     //Setting this.state.data tot the data json array
     state = {
         data,
-        search:"",
-        isMale:"",
-        isFemale:""
+        search:""
     }
 
-
-
+    //Search by Input
     handleSearch = (event) => {
         this.setState({search:event.target.value})
     }
+
+    //Filter if Male check box is clicked
     handleMaleCheck=()=>{
         console.log("On male check box clicked")
-        let FilterByGender = this.state.data.filter(gender=>{
+        let filterByGender = this.state.data.filter(gender=>{
             return gender.gender==="male"
         })
-        this.setState({data:FilterByGender})
+        this.setState({data:filterByGender})
     }
 
+    //Filter if Female check box is clicked
     handleFemaleCheck=()=>{
         console.log("On female check box clicked")
+        let filterByGender = this.state.data.filter(gender=>{
+            return gender.gender==="female"
+        })
+        this.setState({data:filterByGender})
     }
 
       render() {
