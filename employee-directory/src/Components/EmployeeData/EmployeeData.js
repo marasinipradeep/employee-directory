@@ -12,7 +12,9 @@ export default class EmployeeData extends Component {
     //Setting this.state.data tot the data json array
     state = {
         data,
-        search:""
+        search:"",
+        isMale:"",
+        isFemale:""
     }
 
 
@@ -22,6 +24,10 @@ export default class EmployeeData extends Component {
     }
     handleMaleCheck=()=>{
         console.log("On male check box clicked")
+        let FilterByGender = this.state.data.filter(gender=>{
+            return gender.gender==="male"
+        })
+        this.setState({data:FilterByGender})
     }
 
     handleFemaleCheck=()=>{
