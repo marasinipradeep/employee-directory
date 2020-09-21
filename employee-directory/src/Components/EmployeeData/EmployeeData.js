@@ -20,6 +20,13 @@ export default class EmployeeData extends Component {
     handleSearch = (event) => {
         this.setState({search:event.target.value})
     }
+    handleMaleCheck=()=>{
+        console.log("On male check box clicked")
+    }
+
+    handleFemaleCheck=()=>{
+        console.log("On female check box clicked")
+    }
 
       render() {
 
@@ -35,6 +42,8 @@ export default class EmployeeData extends Component {
                 <SearchBar
                     data={this.state.data}
                     handleSearch={this.handleSearch.bind(this)} 
+                    handleMaleCheck={this.handleMaleCheck.bind(this)}
+                    handleFemaleCheck={this.handleFemaleCheck.bind(this)}
                     />
                 <TableHeading />
                 {filterName.map(data => (
