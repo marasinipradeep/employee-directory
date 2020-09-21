@@ -25,9 +25,9 @@ export default class EmployeeData extends Component {
 
     //Filter if Male check box is clicked
     handleMaleCheck = (event) => {
-       
+
         this.setState({ isMale: event.target.checked })
-        
+
         if (!this.state.isMale) {
 
             let filterByGender = this.state.data.filter(gender => {
@@ -43,12 +43,16 @@ export default class EmployeeData extends Component {
 
     //Filter if Female check box is clicked
     handleFemaleCheck = (event) => {
-        console.log("On female check box clicked")
-        this.setState({ isMale: event.target.checked })
-        let filterByGender = this.state.data.filter(gender => {
-            return gender.gender === "female"
-        })
-        this.setState({ data: filterByGender })
+        this.setState({ isFemale: event.target.checked })
+
+        if (!this.state.isFemale) {
+            let filterByGender = this.state.data.filter(gender => {
+                return gender.gender === "female"
+            })
+            this.setState({ data: filterByGender })
+        } else {
+            this.setState({ data })
+        }
     }
 
     render() {
