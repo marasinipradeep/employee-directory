@@ -20,7 +20,8 @@ export default[
       "image": imageOne,
       "phone": "0420719900",
       "email": "SpongeBob@gmail.com",
-      "DOB": "14/07/1979"
+      "DOB": "14/07/1979",
+      "gender":"male"
     },
     {
       "id": 2,
@@ -28,7 +29,8 @@ export default[
       "image": imageTwo,
       "phone": "0420719901",
       "email": "Krabs@gmail.com",
-      "DOB": "10/08/1959"
+      "DOB": "10/08/1959",
+      "gender":"female"
     },
     {
       "id": 3,
@@ -36,7 +38,8 @@ export default[
       "image": imageThree,
       "phone": "0420719902",
       "email": "pradeep@gmail.com",
-      "DOB": "1/05/1949"
+      "DOB": "1/05/1949",
+      "gender":"female"
     },
     {
       "id": 4,
@@ -44,7 +47,8 @@ export default[
       "image": imageFour,
       "phone": "0420719903",
       "email": "Dexter@gmail.com",
-      "DOB": "19/04/1959"
+      "DOB": "19/04/1959",
+      "gender":"male"
     },
     {
       "id": 5,
@@ -52,7 +56,8 @@ export default[
       "image": imageFive,
       "phone": "0420719904",
       "email": "Courage@gmail.com",
-      "DOB": "15/07/1969"
+      "DOB": "15/07/1969",
+      "gender":"male"
     },
     {
       "id": 6,
@@ -60,7 +65,8 @@ export default[
       "image": imageSix,
       "phone": "0420719905",
       "email": "Doug@gmail.com",
-      "DOB": "29/08/1979"
+      "DOB": "29/08/1979",
+      "gender":"female"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@ export default[
       "image": imageSeven,
       "phone": "0420719906",
       "email": "Bugs@gmail.com",
-      "DOB": "12/01/1989"
+      "DOB": "12/01/1989",
+      "gender":"female"
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@ export default[
       "image": imageEight,
       "phone": "0420719907",
       "email": "Johnny@gmail.com",
-      "DOB": "13/07/199"
+      "DOB": "13/07/199",
+      "gender":"female"
     },
     {
       "id": 9,
@@ -84,7 +92,8 @@ export default[
       "image": imageNine,
       "phone": "0420719908",
       "email": "Tommy@gmail.com",
-      "DOB": "19/10/2001"
+      "DOB": "19/10/2001",
+      "gender":"female"
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@ export default[
       "image": imageTen,
       "phone": "0420719909",
       "email": "Rocko@gmail.com",
-      "DOB": "25/02/1995"
+      "DOB": "25/02/1995",
+      "gender":"male"
     },
     {
       "id": 11,
@@ -100,7 +110,8 @@ export default[
       "image": imageEleven,
       "phone": "0420719910",
       "email": "captain@gmail.com",
-      "DOB": "14/07/1960"
+      "DOB": "14/07/1960",
+      "gender":"female"
     },
     {
       "id": 12,
@@ -108,7 +119,8 @@ export default[
       "image": imageTweleve,
       "phone": "0420719911",
       "email": "ckis@gmail.com",
-      "DOB": "03/09/1980"
+      "DOB": "03/09/1980",
+      "gender":"female"
     },
     {
       "id": 13,
@@ -116,7 +128,8 @@ export default[
       "image": imageOne,
       "phone": "0520719900",
       "email": "ponge@gmail.com",
-      "DOB": "14/07/1979"
+      "DOB": "14/07/1979",
+      "gender":"male"
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@ export default[
       "image": imageTwo,
       "phone": "0520719901",
       "email": "Drabs@gmail.com",
-      "DOB": "10/08/1959"
+      "DOB": "10/08/1959",
+      "gender":"female"
     },
     {
       "id": 15,
@@ -132,7 +146,8 @@ export default[
       "image": imageThree,
       "phone": "0520719902",
       "email": "Quidward@gmail.com",
-      "DOB": "1/05/1949"
+      "DOB": "1/05/1949",
+      "gender":"female"
     },
     {
       "id": 16,
@@ -140,7 +155,8 @@ export default[
       "image": imageFour,
       "phone": "0520719903",
       "email": "Dexter@gmail.com",
-      "DOB": "19/04/1959"
+      "DOB": "19/04/1959",
+      "gender":"male"
     },
     {
       "id": 17,
@@ -148,7 +164,8 @@ export default[
       "image": imageFive,
       "phone": "0520719904",
       "email": "Courage@gmail.com",
-      "DOB": "15/07/1969"
+      "DOB": "15/07/1969",
+      "gender":"male"
     },
     {
       "id": 18,
@@ -156,7 +173,8 @@ export default[
       "image": imageSix,
       "phone": "0520719905",
       "email": "Funnie@gmail.com",
-      "DOB": "29/08/1979"
+      "DOB": "29/08/1979",
+      "gender":"female"
     },
     {
       "id": 19,
@@ -164,7 +182,8 @@ export default[
       "image": imageSeven,
       "phone": "0520719906",
       "email": "Bunny@gmail.com",
-      "DOB": "12/01/1989"
+      "DOB": "12/01/1989",
+      "gender":"female"
     },
     {
       "id": 20,
@@ -172,7 +191,8 @@ export default[
       "image": imageEight,
       "phone": "0520719907",
       "email": "Bravo@gmail.com",
-      "DOB": "13/07/199"
+      "DOB": "13/07/199",
+      "gender":"female"
     },
     {
       "id": 21,
@@ -180,7 +200,8 @@ export default[
       "image": imageNine,
       "phone": "0520719908",
       "email": "Pickles@gmail.com",
-      "DOB": "19/10/2001"
+      "DOB": "19/10/2001",
+      "gender":"female"
     },
     {
       "id": 22,
@@ -188,7 +209,8 @@ export default[
       "image": imageTen,
       "phone": "0520719909",
       "email": "Ocko@gmail.com",
-      "DOB": "25/02/1995"
+      "DOB": "25/02/1995",
+      "gender":"male"
     },
     {
       "id": 23,
@@ -196,7 +218,8 @@ export default[
       "image": imageEleven,
       "phone": "0520719910",
       "email": "lanet@gmail.com",
-      "DOB": "14/07/1960"
+      "DOB": "14/07/1960",
+      "gender":"female"
     },
     {
       "id": 24,
@@ -204,7 +227,8 @@ export default[
       "image": imageTweleve,
       "phone": "0520719911",
       "email": "kis@gmail.com",
-      "DOB": "03/09/1980"
+      "DOB": "03/09/1980",
+      "gender":"female"
     }
 
   ]
