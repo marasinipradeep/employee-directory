@@ -1,9 +1,9 @@
 import React from 'react';
-import Home from "./Components/Home/Home"
+import EmployeeContainer from "./Components/EmployeeContainer/EmployeeContainer"
 
 function App() {
   return (
-    <Home/>
+    <EmployeeContainer/>
   );
 }
 
