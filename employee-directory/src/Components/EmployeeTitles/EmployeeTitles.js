@@ -5,7 +5,6 @@ import "./EmployeeTitles.css"
 
 export default function EmployeeTitles(props) {
 
-    console.log(props)
     return (
         <div>
             <table className="table">
