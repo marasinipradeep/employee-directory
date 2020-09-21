@@ -12,49 +12,59 @@ export default class EmployeeData extends Component {
     //Setting this.state.data tot the data json array
     state = {
         data,
-        search:""
+        search: "",
+        isMale: false,
+        isFemale: false
+
     }
 
     //Search by Input
     handleSearch = (event) => {
-        this.setState({search:event.target.value})
+        this.setState({ search: event.target.value })
     }
 
     //Filter if Male check box is clicked
-    handleMaleCheck=()=>{
-        console.log("On male check box clicked")
-        let filterByGender = this.state.data.filter(gender=>{
-            return gender.gender==="male"
-        })
-        this.setState({data:filterByGender})
+    handleMaleCheck = (event) => {
+       
+        this.setState({ isMale: event.target.checked })
+        
+        if (!this.state.isMale) {
+
+            let filterByGender = this.state.data.filter(gender => {
+                return gender.gender === "male"
+            })
+            this.setState({ data: filterByGender })
+        } else {
+
+            this.setState({ data })
+
+        }
     }
 
     //Filter if Female check box is clicked
-    handleFemaleCheck=()=>{
+    handleFemaleCheck = (event) => {
         console.log("On female check box clicked")
-        let filterByGender = this.state.data.filter(gender=>{
-            return gender.gender==="female"
+        this.setState({ isMale: event.target.checked })
+        let filterByGender = this.state.data.filter(gender => {
+            return gender.gender === "female"
         })
-        this.setState({data:filterByGender})
+        this.setState({ data: filterByGender })
     }
 
-      render() {
+    render() {
 
         let filterName = this.state.data.filter((name) => {
-            return name.name.toLowerCase().indexOf(this.state.search.toLowerCase())!== -1;
+            return name.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
         })
 
         return (
-
-           
             <div>
-                
                 <SearchBar
                     data={this.state.data}
-                    handleSearch={this.handleSearch.bind(this)} 
+                    handleSearch={this.handleSearch.bind(this)}
                     handleMaleCheck={this.handleMaleCheck.bind(this)}
                     handleFemaleCheck={this.handleFemaleCheck.bind(this)}
-                    />
+                />
                 <TableHeading />
                 {filterName.map(data => (
                     <EmployeeTitles
@@ -68,7 +78,7 @@ export default class EmployeeData extends Component {
                     />
 
                 )
-            
+
 
                 )}
 

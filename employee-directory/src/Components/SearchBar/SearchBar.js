@@ -11,13 +11,13 @@ export default function SearchBar(props) {
                 <input onChange={props.handleSearch} type="text"></input>
 
                 <div className="form-check">
-                    <input type="checkbox" className="form-check-input" id="male" onClick={props.handleMaleCheck}/>
+                    <input type="checkbox" className="form-check-input" id="male" onChange={props.handleMaleCheck} />
                     <label className="form-check-label" >Male</label>
                 </div>
 
                 <div className="form-check">
                     <input type="checkbox" className="form-check-input" id="female" onClick={props.handleFemaleCheck} />
-                   <label className="form-check-label">Female</label>
+                    <label className="form-check-label">Female</label>
                 </div>
 
             </form>
