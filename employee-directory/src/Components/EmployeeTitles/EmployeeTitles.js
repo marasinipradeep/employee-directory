@@ -1,14 +1,11 @@
 import React from 'react'
 import "./EmployeeTitles.css"
 
-
-
 export default function EmployeeTitles(props) {
 
     return (
         <div>
             <table className="table">
-                
                 <tbody>
                     <tr>
                         <th scope="row">{props.id}</th>
@@ -20,7 +17,6 @@ export default function EmployeeTitles(props) {
                     </tr>
                 </tbody>
             </table>
-
         </div>
     )
 }

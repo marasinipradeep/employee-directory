@@ -1,4 +1,28 @@
+![License badge](https://img.shields.io/badge/license-MIT-green)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+
+# Employee Directory
+
+## User Story
+
+* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+
+## Business Context
+
+An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+
+
+## Functionality
+
+-List all the employees and reanders on table view.
+-Filter the employee by input.
+-Filter the employee by male gender only.
+-Filter the employee by female gender only.
+
+
 
 ## Available Scripts
 
@@ -66,3 +90,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+## VideoLink
+<a href= "https://youtu.be/JVB7qO70QU4">Click here for demo video link</a>
+

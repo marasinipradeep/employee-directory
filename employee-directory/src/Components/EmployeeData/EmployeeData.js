@@ -5,8 +5,6 @@ import data from "../../data"
 
 import SearchBar from "../SearchBar/SearchBar"
 
-
-
 export default class EmployeeData extends Component {
 
     //Setting this.state.data tot the data json array
@@ -25,11 +23,8 @@ export default class EmployeeData extends Component {
 
     //Filter if Male check box is clicked
     handleMaleCheck = (event) => {
-
         this.setState({ isMale: event.target.checked })
-
         if (!this.state.isMale) {
-
             let filterByGender = this.state.data.filter(gender => {
                 return gender.gender === "male"
             })
