@@ -12,7 +12,7 @@ export default function EmployeeTitles(props) {
                 <tbody>
                     <tr>
                         <th scope="row">{props.id}</th>
-                        <img src={props.image}></img>
+                        <td><img src={props.image}></img></td>
                         <td>{props.name}</td>
                         <td>{props.phone}</td>
                         <td>{props.email}</td>
