@@ -21,8 +21,11 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 -Filter the employee by input.
 -Filter the employee by male gender only.
 -Filter the employee by female gender only.
+-Sort By Name ascending and descending
 
 
+## A gif of the working application is below:
+![demo of employee-directory](src/Components/images/demo.gif)
 
 ## Available Scripts
 
