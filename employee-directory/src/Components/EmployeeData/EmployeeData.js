@@ -12,8 +12,9 @@ export default class EmployeeData extends Component {
         data,
         search: "",
         isMale: false,
-        isFemale: false
-
+        isFemale: false,
+        isName: false,
+        sortName: data
     }
 
     //Search by Input
@@ -48,8 +49,57 @@ export default class EmployeeData extends Component {
         } else {
             this.setState({ data })
         }
+
     }
 
+    //Filter if sort by name check box is clicked
+    handleSortByName = (event) => {
+        this.setState({ isName: event.target.checked })
+        console.log(this.state.isName)
+        if (event.target.checked) {
+            console.log("inside if ")
+            this.state.data.sort(function (a, b) {
+                var nameA = a.name.toLowerCase()
+                var nameB = b.name.toLowerCase()
+                if (nameA < nameB) //sort string ascending
+                    return -1
+                else if (nameA > nameB)
+                    return 1
+                else return 0 //default return value (no sorting)
+            })
+         }
+        //else if(!event.target.checked){
+
+        //     this.state.data.sort(function (a, b) {
+        //         var nameA = a.name.toLowerCase()
+        //         var nameB = b.name.toLowerCase()
+        //         if (nameB < nameA) //sort string ascending
+        //             return -1
+        //         else if (nameB > nameA)
+        //             return 1
+        //         else return 0 //default return value (no sorting)
+        //     })
+
+        // }
+    }
+
+    //Filter if sort by descending name check box is clicked
+    handleSortByDecendingName = (event) => {
+        this.setState({ isName: event.target.checked })
+        console.log(this.state.isName)
+        if(event.target.checked){
+            this.state.data.sort(function (a, b) {
+                var nameA = a.name.toLowerCase()
+                var nameB = b.name.toLowerCase()
+                if (nameB < nameA) //sort string ascending
+                    return -1
+                else if (nameB > nameA)
+                    return 1
+                else return 0 //default return value (no sorting)
+            })
+
+        }
+    }
     render() {
 
         let filterName = this.state.data.filter((name) => {
@@ -63,8 +113,10 @@ export default class EmployeeData extends Component {
                     handleSearch={this.handleSearch.bind(this)}
                     handleMaleCheck={this.handleMaleCheck.bind(this)}
                     handleFemaleCheck={this.handleFemaleCheck.bind(this)}
+                    handleSortByName={this.handleSortByName.bind(this)}
+                    handleSortByDecendingName={this.handleSortByDecendingName.bind(this)}
                 />
-                <TableHeading />
+                <TableHeading  handleSortByName={this.handleSortByName.bind(this)}/>
                 {filterName.map(data => (
                     <EmployeeTitles
                         key={data.id}

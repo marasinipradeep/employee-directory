@@ -4,24 +4,44 @@ import "./SearchBar.css"
 export default function SearchBar(props) {
 
     return (
+       
+            <section className="filter-container">
+                <form className="filter-form form-group ">
+                    
+                    <div className="row">
+                    <p className="col-md-6">Sort By : </p>
+                    
+                    <input onChange={props.handleSearch} type="text"></input>
+                    </div>
 
-        <section className="filter-container">
-            <form className="filter-form form-group">
+                    <div className="">
+                    <div className="form-check">
+                        <label className="form-check-label" >Male:</label>
+                        <input type="checkbox" className="form-check-input" id="male" onChange={props.handleMaleCheck} />
 
-                <input onChange={props.handleSearch} type="text"></input>
+                    </div>
 
-                <div className="form-check">
-                    <input type="checkbox" className="form-check-input" id="male" onChange={props.handleMaleCheck} />
-                    <label className="form-check-label" >Male</label>
-                </div>
+                    <div className="form-check">
+                        <label className="form-check-label">Female :</label>
+                        <input type="checkbox" className="form-check-input" id="female" onChange={props.handleFemaleCheck} />
 
-                <div className="form-check">
-                    <input type="checkbox" className="form-check-input" id="female" onClick={props.handleFemaleCheck} />
-                    <label className="form-check-label">Female</label>
-                </div>
+                    </div>
 
-            </form>
-        </section>
+                    <div className="form-check">
+                        <label className="form-check-label">Ascending Name :</label>
+                        <input type="checkbox" className="form-check-input " id="sort" onChange={props.handleSortByName} />
+
+                    </div>
+
+                    <div className="form-check">
+                        <label className="form-check-label">Descending Name :</label>
+                        <input type="checkbox" className="form-check-input " id="sortDecend" onChange={props.handleSortByDecendingName} />
+
+                    </div>
+                    </div>
+
+                </form>
+            </section>
 
 
     )

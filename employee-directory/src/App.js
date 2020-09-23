@@ -3,7 +3,9 @@ import EmployeeContainer from "./Components/EmployeeContainer/EmployeeContainer"
 
 function App() {
   return (
+    <>
     <EmployeeContainer/>
+    </>
   );
 }
 
