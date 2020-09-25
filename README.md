@@ -25,7 +25,7 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 
 
 ## A gif of the working application is below:
-![demo of employee-directory](employee-directory/src/Components/images/demo.gif)
+![demo of employee-directory](employee-directory/src/Components/Images/demo.gif)
 
 ## Available Scripts
 
